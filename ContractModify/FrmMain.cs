@@ -67,10 +67,10 @@ namespace ContractModify
                     // 文件存在判断 
                     if (!File.Exists(filePath_origin_jsmx))
                     {
-                        throw new FileNotFoundException(string.Format(@"{0} 文件不存在", filePath_origin_jsmx));
+                        //throw new FileNotFoundException(string.Format(@"{0} 文件不存在", filePath_origin_jsmx));
 
-                        //bw.ReportProgress(0, new ReportObj(filePath_origin_jsmx, updateRows, true));
-                        // continue;
+                        bw.ReportProgress(0, new ReportObj(filePath_origin_jsmx, updateRows, true));
+                        continue;
                     }
 
 
